@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Recommendations</h1>
+        <p class="weather-details">{{ recommendations['Weather Details'] }}</p>
+        <div class="recommendations">
+            <p><strong>Outerwear:</strong> {{ recommendations['Outerwear'] }}</p>
+            <p><strong>Top:</strong> {{ recommendations['Top'] }}</p>
+            <p><strong>Bottoms:</strong> {{ recommendations['Bottoms'] }}</p>
+            <p><strong>Shoes:</strong> {{ recommendations['Shoes'] }}</p>
+        </div>
+        <a class="back-button" href="/">Back</a>
+    </div>
+</body>
+
+</html>

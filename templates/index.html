@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="index-container">
+        <h1>Welcome to the Weather App</h1>
+        <p class="description">Get clothing recommendations based on the weather in your area.</p>
+        <form class="input-form" method="POST" action="/">
+            <label for="zip_code">Enter your ZIP Code:</label>
+            <input type="text" id="zip_code" name="zip_code" required>
+            <button type="submit" class="submit-button">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+
+</html>
